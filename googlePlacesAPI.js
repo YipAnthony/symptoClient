@@ -25,3 +25,7 @@ function onPlaceChanged() {
     document.getElementById('googleAddress').setAttribute('resultName', place.name)  
   }
 }
+
+let script = document.createElement('script');
+script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBTW_8sbZzP5LVZkUOzq68dz0-6WwkoKQw&libraries=places&callback=initAutocomplete";
+document.head.appendChild(script);
